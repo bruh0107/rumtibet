@@ -1,1 +1,24 @@
 @import "tailwindcss";
+@import "./fonts.css";
+
+@theme {
+
+
+    --font-main: 'Nunito Sans', sans-serif;
+    --font-second: 'NEXT ART', sans-serif;
+}
+
+html {
+    font-family: var(--font-main), sans-serif;
+}
+
+.main-container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+@media (max-width: 400px) {
+    body {
+        padding: 20px 16px;
+    }
+}
