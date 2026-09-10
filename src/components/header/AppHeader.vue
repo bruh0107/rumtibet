@@ -9,9 +9,9 @@
       </h1>
     </div>
 
-    <app-icon class="sm:hidden" name="burger-menu" />
+    <app-icon class="md:hidden" name="burger-menu" />
 
-    <div class="max-sm:hidden flex items-center lg:gap-12.25 gap-5">
+    <div class="max-md:hidden flex items-center lg:gap-12.25 gap-5">
       <header-nav />
       <app-button :size="'normal'" variant="dark">Консультация</app-button>
     </div>

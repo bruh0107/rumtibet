@@ -1,0 +1,1 @@
+export { default as AboutHike } from './AboutHike.vue'
