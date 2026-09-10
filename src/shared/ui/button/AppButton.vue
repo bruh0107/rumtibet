@@ -1,11 +1,23 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
-
+  <button :class="buttonVariants({
+    variant: props.variant,
+    size: props.size
+  })"
+  >
+    <slot/>
+  </button>
 </template>
 
-<style scoped>
+<script setup lang="ts">
+import { buttonVariants, type ButtonVariants } from '@/shared/ui'
 
-</style>
+interface Props {
+  variant?: ButtonVariants['variant']
+  size?: ButtonVariants['size']
+}
+
+const props = withDefaults(defineProps<Props>(), {
+  variant: 'dark',
+  size: 'normal'
+})
+</script>

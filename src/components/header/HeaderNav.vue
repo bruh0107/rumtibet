@@ -1,38 +1,34 @@
+<template>
+  <nav class="flex gap-3 lg:gap-6 font-semibold text-sm text-grey-100 lg:text-lg">
+    <a v-for="(nav, index) in navigation" :key="index" :href="nav.href">{{ nav.title }}</a>
+  </nav>
+</template>
+
 <script setup lang="ts">
 const navigation = [
   {
     title: 'Главная',
-    href: '#'
+    href: '#',
   },
   {
     title: 'Про гида',
-    href: '#'
+    href: '#',
   },
   {
     title: 'Программа тура',
-    href: '#'
+    href: '#',
   },
   {
     title: 'Стоимость',
-    href: '#'
+    href: '#',
   },
   {
     title: 'Блог',
-    href: '#'
+    href: '#',
   },
   {
     title: 'Контакты',
-    href: '#'
+    href: '#',
   },
 ]
 </script>
-
-<template>
-  <nav class="flex gap-6 font-semibold">
-    <a v-for="nav in navigation" href="">{{ nav.title }}</a>
-  </nav>
-</template>
-
-<style scoped>
-
-</style>
