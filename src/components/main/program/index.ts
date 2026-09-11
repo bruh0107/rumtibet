@@ -1,0 +1,1 @@
+export { default as BestProgram } from './BestProgram.vue'
